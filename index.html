@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://kit.fontawesome.com/fd53a0b663.js" crossorigin="anonymous"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch&family=Cousine&family=Rock+3D&family=Sarabun:wght@200;400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="styles/index.css">
+    <script defer src="javascript/nav_Javascript.js"></script>
+    <script defer src="javascript/carousel.js"></script>
+    <title>Portfolio</title>
+</head>
+
+<body>
+
+    <header>
+        <nav id = "navbar">
+            <div class="open_Menu"><i class="fa fa-bars"></i></div>
+                <ul class="main_Menu">
+                    <li><a href="#navbar" class="active">Home</a></li>
+                    <li><a href="#section02">Projects</a></li>
+                    <li><a href="#section03">Skills</a></li>
+                    <li><a href="#section04">About</a></li>
+                    <div class="close_Menu"><i class="fa fa-times"></i></div>
+                        <span class="icons">
+                        <a href="https://github.com/Benguins?tab=repositories"><i class="fab fa-github"></i></a>
+                        <a href="https://linkedin.com/in/ben-beaumont-164128160"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.facebook.com/ben.beaumont.790"><i class="fab fa-facebook-f"></i></a>
+                    </span>
+                </ul>
+            </nav>
+        </header>
+
+    <main>
+        <section class="section01_Wrapper">
+            <div class="section01_First_Content_Container">
+                <h1 class="section01_Text my_Name">Ben Beaumont</h1>
+            </div>
+            <div class="section01_Second_Content_Container">
+                <h2 class="section01_Text portfolio_Info">High quality</h2>
+            </div>
+            <div class="section01_Third_Content_Container">
+                <h2 class="section01_Text Frontend_Developer_Text">frontend development</h2>
+            </div>
+        </section>
+
+        <section class="break_Section01">
+            <a href="#section02"><i class="fas fa-arrow-down"></i></a>
+        </section>
+
+        <section class="section02" id="section02">
+            <h2 class="section02_Title_Text">Projects</h2>
+            <div class="section02_First_Project_Container">
+                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img class="d-block w-100" src="./images/Bhromaon01.png" alt="First slide">
+                      </div>
+                      <div class="carousel-item">
+                        <img class="d-block w-100" src="./images/Bhromaon02.png" alt="Second slide">
+                      </div>
+                      <div class="carousel-item">
+                        <img class="d-block w-100" src="./images/Bhromaon03.png" alt="Third slide">
+                      </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Next</span>
+                    </a>
+                  </div>
+            </div>
+        </section>
+
+        <section class="break_Section02">
+            <a href="#section03"><i class="fas fa-arrow-down"></i></a>
+        </section>
+
+        <section class="section03_Wrapper" id="section03">
+            <div class="section03_Container">
+               <div class="section03_Container_Icon01">
+                    <i class="fab fa-html5"></i>
+                    <h2 class="section03_Container_Icon01_Title">HTML</h2>
+                    <p class="section03_Container_Icon01_Text">Text goes here and then fill it in with words, words are a great way we can communicate with people init init init, one more
+                        time, init yo.
+                    </p>
+               </div>
+               <div class="section03_Container_Icon02">
+                <i class="fab fa-css3-alt"></i>
+                <h2 class="section03_Container_Icon02_Title">CSS</h2>
+                <p class="section03_Container_Icon02_Text">Text goes here and then fill it in with words, words are a great way we can communicate with people init init init, one more
+                    time, init yo.
+                </p>
+                </div>
+                <div class="section03_Container_Icon03">
+                    <i class="fab fa-js"></i>
+                    <h2 class="section03_Container_Icon03_Title">JS</h2>
+                    <p class="section03_Container_Icon03_Text">Text goes here and then fill it in with words, words are a great way we can communicate with people init init init, one more
+                        time, init yo.
+                    </p>
+                </div>
+                <div class="section03_Container_Icon04">
+                    <i class="fab fa-sass"></i>
+                    <h2 class="section03_Container_Icon04_Title">SASS</h2>
+                    <p class="section03_Container_Icon04_Text">Text goes here and then fill it in with words, words are a great way we can communicate with people init init init, one more
+                        time, init yo.
+                    </p>
+                </div>
+                <div class="section03_Container_Icon05">
+                    <i class="fab fa-bootstrap"></i>
+                    <h2 class="section03_Container_Icon05_Title">Bootstrap</h2>
+                    <p class="section03_Container_Icon05_Text">Text goes here and then fill it in with words, words are a great way we can communicate with people init init init, one more
+                        time, init yo.
+                    </p>
+                </div>
+                <div class="section03_Container_Icon06">
+                    <i class="fab fa-react"></i>
+                    <h2 class="section03_Container_Icon06_Title">React</h2>
+                    <p class="section03_Container_Icon06_Text">Text goes here and then fill it in with words, words are a great way we can communicate with people init init init, one more
+                        time, init yo.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="break_Section03">
+            <a href="#section04"><i class="fas fa-arrow-down"></i></a>
+        </section>
+
+        <section class="section04_Wrapper" id="section04">
+            <div class="section04_Img_Container">
+                <img class="section04_Img" src="images/section04_Img01.png" alt="image of Ben Beaumont">
+            </div>
+            <div class="section04_Text_Container">
+                <h3 class="section04_Text main_Text">Hi, I'm Ben Beaumont</h3>
+                <p class="section04_Text Second_Text">I'm here to create high quality functioning websites, utilising the latest and
+                    best technologies and standards, as well as to grow my skills and have fun. Do you require a website that oozes quality and professionalism, with well written and structured code
+                    that is easy to read and maintain?.  Utilisng my skills that I have developed over the years I can turn the impossible into the possible
+                    the ugly to the beautiful.<br><br> I'm experienced in creating websites based off clients wants and needs.
+                    I'm an up and coming frontend developer who has a hunger to consume knowledge 
+                    and build ever bigger and better.
+                    I have been using websites for much of my life and have a keen knowledge of what makes
+                    a good website and what doesn't. When I am not working on some project I enjoy gaming, reading a good book, running and walking.
+                 </p>
+            </div>
+            <div class="section04_Icons_Container">
+                <a href="https://github.com/Benguins?tab=repositories"><i class="fab fa-github"></i></a>
+                <a href="https://linkedin.com/in/ben-beaumont-164128160"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.facebook.com/ben.beaumont.790"><i class="fab fa-facebook-f"></i></a>
+            </div>
+        </section>  
+
+        <section class="break_Section04">
+            <a href="#footer"><i class="fas fa-arrow-down"></i></a>
+        </section>
+
+    </main>
+
+        <footer>
+            <div class="footer_Container" id="footer">
+                <h2 class="footer_Container_Text footer_Container_Text_First">Benjamin</h2>
+                <a href="#navbar"><i class="fas fa-arrow-up"></i></a>
+            <div class="footer_container_SocialMedia">
+                <a href="https://github.com/Benguins?tab=repositories"><i class="fab fa-github"></i></a>
+                <a href="https://linkedin.com/in/ben-beaumont-164128160"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.facebook.com/ben.beaumont.790"><i class="fab fa-facebook-f"></i></a>
+            </div>
+            </div>
+        </footer>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
+

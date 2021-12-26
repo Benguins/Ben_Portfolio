@@ -1,0 +1,46 @@
+@import "../partials/navigation_Hamburger";
+
+@media(max-width: 800px){
+    header{
+        nav{
+            .main_Menu {
+                height: 100vh;
+                position: fixed;
+                top: 0;
+                right: 0;
+                left: 0;
+                z-index: 10;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                background: $black;
+                transition: top 1s ease;
+                display: none;
+                gap: 20px;
+            }
+            .main_Menu li a {
+                letter-spacing: 0.5em;
+            }
+            .main_Menu .close_Menu {
+                display: block;
+                position: absolute;
+                top: 20px;
+                right: 20px;
+        
+            }
+            .open_Menu {
+                display: block;
+            }
+            .main_Menu li a:hover {
+                background: none;
+                color: $orange;
+                font-size: 1.6rem;
+            }
+            .icons i {
+                display: inline-block;
+                padding: 12px;
+                margin-top: 30px;
+            }
+        }
+    }
+}

@@ -1,0 +1,183 @@
+@import "../partials/reset_Code";
+@import "../partials/styling";
+@import "../partials/fonts";
+@import "../partials/colours";
+
+.section01_Wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 1000px; 
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../images/background_ImgLeft.png); 
+    background-color: $black;
+    background-repeat: no-repeat;
+    background-size: cover;
+    .section01_Text{
+        font-family: $Sarabun;
+        letter-spacing: 1.215em;
+        color: $white;
+        text-transform: uppercase;
+    }
+    .section01_First_Content_Container{
+        padding: 30px;
+        .my_Name{
+            color: $orange;
+        }
+    }
+    .section01_Second_Content_Container{
+        padding: 30px;
+    }
+    .section01_Third_Content_Container{
+        padding: 30px;
+        .Frontend_Developer_Text{
+            color: $orange;
+        }
+    }
+}
+
+.section02{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    background-color: $blackGrey;
+    width: 100%;
+    height: 700px;
+    .section02_Title_Text{
+        margin-top: 30px;
+        color: $orange;
+        letter-spacing: 1.215em;
+        text-transform: uppercase;
+        grid-column: 5 / span 4;
+        grid-row: 1 / span 1;
+        place-self: center;
+    }
+    .section02_First_Project_Container{
+        grid-column: 4 / span 7;
+        grid-row: 3 / span 9;
+        width: 80%;
+        height: 100%;
+        object-fit: cover;
+        overflow: hidden;
+    }
+    .section02_First_Project_Container > img{
+        width: 50%;
+        height: 50%;
+    }
+}
+
+.section04_Wrapper{
+    display: flex;
+    width: 100%;
+    height: 600px;
+    gap: 40px;
+    background-color: $black;
+    .section04_Img_Container{
+        display: flex;
+        width: 20%;
+        justify-content: center;
+        .section04_Img{
+            width: 70%;
+            height: 60%;
+            align-self: center;
+        }
+    }
+    .section04_Text_Container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 60%;
+        margin-left: 30px;
+        .section04_Text{
+            width: 100%;
+            color: $white;
+            font-family: $Sarabun;
+            font-weight: 200;
+            letter-spacing: 0.2em;
+            line-height: 1.8em;
+        }
+        .main_Text{
+            color: $orange;
+            padding-bottom: 20px;
+        }
+    }
+    .section04_Icons_Container{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        width: 10%;
+        .fa-twitter, .fa-facebook-f, .fa-linkedin-in, .fa-github{
+            font-size: 35px;
+            color: $white;
+            transition: color 0.5s ease-out;
+        }
+        .fa-twitter:hover{
+            color: $twitter;
+            transition: color 0.5s ease-out;
+        }
+        .fa-facebook-f:hover{
+            color: $facebook;
+            transition: color 0.5s ease-out;
+        }
+        .fa-linkedin-in:hover{
+            color: $linkedin;
+            transition: color 0.5s ease-out;
+        }
+        .fa-github:hover{
+            color: $github;
+            transition: color 0.5s ease-out;
+        }
+    }
+}
+
+.section03_Wrapper{
+    height: 500px;
+    width: 100%;
+    background-color: $blackGrey;
+    .section03_Container{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        column-gap: 50px;
+        .fa-html5, .fa-css3-alt, .fa-js, .fa-sass, .fa-bootstrap, .fa-react{
+            font-size: 50px;
+            color: $orange; 
+        }
+        .section03_Container_Icon01_Title, .section03_Container_Icon02_Title, .section03_Container_Icon03_Title, .section03_Container_Icon04_Title, .section03_Container_Icon05_Title, .section03_Container_Icon06_Title{
+            color: $white;
+            letter-spacing: 0.3em;
+        }
+        .section03_Container_Icon01_Text, .section03_Container_Icon02_Text, .section03_Container_Icon03_Text, .section03_Container_Icon04_Text, .section03_Container_Icon05_Text, .section03_Container_Icon06_Text{
+            color: $white;
+        }
+        .section03_Container_Icon01, .section03_Container_Icon02, .section03_Container_Icon03, .section03_Container_Icon04, .section03_Container_Icon05, .section03_Container_Icon06{
+            display: flex;
+            flex-direction: column;
+            width: 25%;
+            gap: 20px;
+        }
+    }
+}
+
+.break_Section01, .break_Section02, .break_Section03, .break_Section04{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    height: 500px;
+    background-color: $black;
+    .fa-arrow-down{
+        margin-top: 30px;
+        font-size: 30px;
+        color: $orange;
+    }
+}
+
+
+
+

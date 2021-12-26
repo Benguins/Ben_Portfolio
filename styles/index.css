@@ -1,0 +1,1866 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+h1 {
+  font-size: 26px;
+}
+
+h2 {
+  font-size: 22px;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+@media all and (min-width: 300px) {
+  h1 {
+    font-size: 15px;
+  }
+  h2 {
+    font-size: 12px;
+  }
+  h3 {
+    font-size: 25px;
+  }
+  p {
+    font-size: 10px;
+  }
+}
+
+@media all and (min-width: 400px) {
+  h1 {
+    font-size: 15px;
+  }
+  h2 {
+    font-size: 12px;
+  }
+  h3 {
+    font-size: 25px;
+  }
+  p {
+    font-size: 10px;
+  }
+}
+
+@media all and (min-width: 500px) {
+  h1 {
+    font-size: 15px;
+  }
+  h2 {
+    font-size: 12px;
+  }
+  h3 {
+    font-size: 25px;
+  }
+  p {
+    font-size: 10px;
+  }
+}
+
+@media all and (min-width: 600px) {
+  h1 {
+    font-size: 15px;
+  }
+  h2 {
+    font-size: 12px;
+  }
+  h3 {
+    font-size: 25px;
+  }
+  p {
+    font-size: 10px;
+  }
+}
+
+@media all and (min-width: 700px) {
+  h1 {
+    font-size: 20px;
+  }
+  h2 {
+    font-size: 12px;
+  }
+  h3 {
+    font-size: 25px;
+  }
+  p {
+    font-size: 12px;
+  }
+}
+
+@media all and (min-width: 800px) {
+  h1 {
+    font-size: 25px;
+  }
+  h2 {
+    font-size: 14px;
+  }
+  h3 {
+    font-size: 25px;
+  }
+  a {
+    font-size: 8px;
+  }
+  p {
+    font-size: 13px;
+  }
+}
+
+@media all and (min-width: 900px) {
+  h1 {
+    font-size: 30px;
+  }
+  h2 {
+    font-size: 16px;
+  }
+  h3 {
+    font-size: 25px;
+  }
+  a {
+    font-size: 10px;
+  }
+  p {
+    font-size: 13px;
+  }
+}
+
+@media all and (min-width: 1000px) {
+  h1 {
+    font-size: 35px;
+  }
+  h2 {
+    font-size: 18px;
+  }
+  h3 {
+    font-size: 25px;
+  }
+  a {
+    font-size: 10px;
+  }
+  p {
+    font-size: 13px;
+  }
+}
+
+@media all and (min-width: 1100px) {
+  h1 {
+    font-size: 40px;
+  }
+  h2 {
+    font-size: 20px;
+  }
+  h3 {
+    font-size: 25px;
+  }
+  a {
+    font-size: 10px;
+  }
+  p {
+    font-size: 13px;
+  }
+}
+
+@media all and (min-width: 1200px) {
+  h1 {
+    font-size: 45px;
+  }
+  h2 {
+    font-size: 22px;
+  }
+  h3 {
+    font-size: 25px;
+  }
+  a {
+    font-size: 12px;
+  }
+  p {
+    font-size: 13px;
+  }
+}
+
+@media all and (min-width: 1300px) {
+  h1 {
+    font-size: 50px;
+  }
+  h2 {
+    font-size: 24px;
+  }
+  h3 {
+    font-size: 25px;
+  }
+  a {
+    font-size: 14px;
+  }
+  p {
+    font-size: 13px;
+  }
+}
+
+@media all and (min-width: 1400px) {
+  h1 {
+    font-size: 55px;
+  }
+  h2 {
+    font-size: 26px;
+  }
+  h3 {
+    font-size: 25px;
+  }
+  a {
+    font-size: 16px;
+  }
+  p {
+    font-size: 14px;
+  }
+}
+
+@media all and (min-width: 1500px) {
+  h1 {
+    font-size: 60px;
+  }
+  h2 {
+    font-size: 28px;
+  }
+  h3 {
+    font-size: 25px;
+  }
+  a {
+    font-size: 18px;
+  }
+  p {
+    font-size: 14px;
+  }
+}
+
+@media all and (min-width: 1600px) {
+  h1 {
+    font-size: 65px;
+  }
+  h2 {
+    font-size: 30px;
+  }
+  h3 {
+    font-size: 25px;
+  }
+  a {
+    font-size: 20px;
+  }
+  p {
+    font-size: 14px;
+  }
+}
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+h1 {
+  font-size: 26px;
+}
+
+h2 {
+  font-size: 22px;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+@media all and (min-width: 300px) {
+  h1 {
+    font-size: 15px;
+  }
+  h2 {
+    font-size: 12px;
+  }
+  h3 {
+    font-size: 25px;
+  }
+  p {
+    font-size: 10px;
+  }
+}
+
+@media all and (min-width: 400px) {
+  h1 {
+    font-size: 15px;
+  }
+  h2 {
+    font-size: 12px;
+  }
+  h3 {
+    font-size: 25px;
+  }
+  p {
+    font-size: 10px;
+  }
+}
+
+@media all and (min-width: 500px) {
+  h1 {
+    font-size: 15px;
+  }
+  h2 {
+    font-size: 12px;
+  }
+  h3 {
+    font-size: 25px;
+  }
+  p {
+    font-size: 10px;
+  }
+}
+
+@media all and (min-width: 600px) {
+  h1 {
+    font-size: 15px;
+  }
+  h2 {
+    font-size: 12px;
+  }
+  h3 {
+    font-size: 25px;
+  }
+  p {
+    font-size: 10px;
+  }
+}
+
+@media all and (min-width: 700px) {
+  h1 {
+    font-size: 20px;
+  }
+  h2 {
+    font-size: 12px;
+  }
+  h3 {
+    font-size: 25px;
+  }
+  p {
+    font-size: 12px;
+  }
+}
+
+@media all and (min-width: 800px) {
+  h1 {
+    font-size: 25px;
+  }
+  h2 {
+    font-size: 14px;
+  }
+  h3 {
+    font-size: 25px;
+  }
+  a {
+    font-size: 8px;
+  }
+  p {
+    font-size: 13px;
+  }
+}
+
+@media all and (min-width: 900px) {
+  h1 {
+    font-size: 30px;
+  }
+  h2 {
+    font-size: 16px;
+  }
+  h3 {
+    font-size: 25px;
+  }
+  a {
+    font-size: 10px;
+  }
+  p {
+    font-size: 13px;
+  }
+}
+
+@media all and (min-width: 1000px) {
+  h1 {
+    font-size: 35px;
+  }
+  h2 {
+    font-size: 18px;
+  }
+  h3 {
+    font-size: 25px;
+  }
+  a {
+    font-size: 10px;
+  }
+  p {
+    font-size: 13px;
+  }
+}
+
+@media all and (min-width: 1100px) {
+  h1 {
+    font-size: 40px;
+  }
+  h2 {
+    font-size: 20px;
+  }
+  h3 {
+    font-size: 25px;
+  }
+  a {
+    font-size: 10px;
+  }
+  p {
+    font-size: 13px;
+  }
+}
+
+@media all and (min-width: 1200px) {
+  h1 {
+    font-size: 45px;
+  }
+  h2 {
+    font-size: 22px;
+  }
+  h3 {
+    font-size: 25px;
+  }
+  a {
+    font-size: 12px;
+  }
+  p {
+    font-size: 13px;
+  }
+}
+
+@media all and (min-width: 1300px) {
+  h1 {
+    font-size: 50px;
+  }
+  h2 {
+    font-size: 24px;
+  }
+  h3 {
+    font-size: 25px;
+  }
+  a {
+    font-size: 14px;
+  }
+  p {
+    font-size: 13px;
+  }
+}
+
+@media all and (min-width: 1400px) {
+  h1 {
+    font-size: 55px;
+  }
+  h2 {
+    font-size: 26px;
+  }
+  h3 {
+    font-size: 25px;
+  }
+  a {
+    font-size: 16px;
+  }
+  p {
+    font-size: 14px;
+  }
+}
+
+@media all and (min-width: 1500px) {
+  h1 {
+    font-size: 60px;
+  }
+  h2 {
+    font-size: 28px;
+  }
+  h3 {
+    font-size: 25px;
+  }
+  a {
+    font-size: 18px;
+  }
+  p {
+    font-size: 14px;
+  }
+}
+
+@media all and (min-width: 1600px) {
+  h1 {
+    font-size: 65px;
+  }
+  h2 {
+    font-size: 30px;
+  }
+  h3 {
+    font-size: 25px;
+  }
+  a {
+    font-size: 20px;
+  }
+  p {
+    font-size: 14px;
+  }
+}
+
+header .sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+header nav {
+  background: #000;
+  color: #FFFFFF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 100px;
+}
+
+header nav .main_Menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 60px;
+  list-style: none;
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+
+header nav .main_Menu li a {
+  font-family: "Chakra Petch", sans-serif;
+  display: inline-block;
+  padding: 15px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  letter-spacing: 1.38em;
+  -webkit-transition: color, font-size 0.5s ease-out;
+  transition: color, font-size 0.5s ease-out;
+}
+
+header nav .main_Menu li a.active {
+  color: #FFA500;
+  border-bottom: 1px solid #FFA500;
+}
+
+header nav .main_Menu li a:hover {
+  color: #FFA500;
+  font-size: 1rem;
+}
+
+header nav .open_Menu {
+  font-size: 2rem;
+  margin: 20px;
+  display: none;
+  cursor: pointer;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  font-family: 'Chakra Petch', sans-serif;
+}
+
+header nav .main_Menu .close_Menu, header nav .icons i {
+  font-size: 2rem;
+  color: #FFFFFF;
+  display: none;
+  cursor: pointer;
+}
+
+header nav .fa-facebook:hover {
+  color: #3b5998;
+  -webkit-transition: color 0.5s ease-out;
+  transition: color 0.5s ease-out;
+}
+
+header nav .fa-twitter:hover {
+  color: #00acee;
+  -webkit-transition: color 0.5s ease-out;
+  transition: color 0.5s ease-out;
+}
+
+header nav .fa-linkedin-in:hover {
+  color: #0e76a8;
+  -webkit-transition: color 0.5s ease-out;
+  transition: color 0.5s ease-out;
+}
+
+header nav .fa-github:hover {
+  color: #171515;
+  -webkit-transition: color 0.5s ease-out;
+  transition: color 0.5s ease-out;
+}
+
+@media all and (max-width: 1100px) {
+  header nav .main_Menu li a:hover {
+    color: #FFA500;
+    font-size: 0.8rem;
+  }
+}
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+h1 {
+  font-size: 26px;
+}
+
+h2 {
+  font-size: 22px;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+@media all and (min-width: 300px) {
+  h1 {
+    font-size: 15px;
+  }
+  h2 {
+    font-size: 12px;
+  }
+  h3 {
+    font-size: 25px;
+  }
+  p {
+    font-size: 10px;
+  }
+}
+
+@media all and (min-width: 400px) {
+  h1 {
+    font-size: 15px;
+  }
+  h2 {
+    font-size: 12px;
+  }
+  h3 {
+    font-size: 25px;
+  }
+  p {
+    font-size: 10px;
+  }
+}
+
+@media all and (min-width: 500px) {
+  h1 {
+    font-size: 15px;
+  }
+  h2 {
+    font-size: 12px;
+  }
+  h3 {
+    font-size: 25px;
+  }
+  p {
+    font-size: 10px;
+  }
+}
+
+@media all and (min-width: 600px) {
+  h1 {
+    font-size: 15px;
+  }
+  h2 {
+    font-size: 12px;
+  }
+  h3 {
+    font-size: 25px;
+  }
+  p {
+    font-size: 10px;
+  }
+}
+
+@media all and (min-width: 700px) {
+  h1 {
+    font-size: 20px;
+  }
+  h2 {
+    font-size: 12px;
+  }
+  h3 {
+    font-size: 25px;
+  }
+  p {
+    font-size: 12px;
+  }
+}
+
+@media all and (min-width: 800px) {
+  h1 {
+    font-size: 25px;
+  }
+  h2 {
+    font-size: 14px;
+  }
+  h3 {
+    font-size: 25px;
+  }
+  a {
+    font-size: 8px;
+  }
+  p {
+    font-size: 13px;
+  }
+}
+
+@media all and (min-width: 900px) {
+  h1 {
+    font-size: 30px;
+  }
+  h2 {
+    font-size: 16px;
+  }
+  h3 {
+    font-size: 25px;
+  }
+  a {
+    font-size: 10px;
+  }
+  p {
+    font-size: 13px;
+  }
+}
+
+@media all and (min-width: 1000px) {
+  h1 {
+    font-size: 35px;
+  }
+  h2 {
+    font-size: 18px;
+  }
+  h3 {
+    font-size: 25px;
+  }
+  a {
+    font-size: 10px;
+  }
+  p {
+    font-size: 13px;
+  }
+}
+
+@media all and (min-width: 1100px) {
+  h1 {
+    font-size: 40px;
+  }
+  h2 {
+    font-size: 20px;
+  }
+  h3 {
+    font-size: 25px;
+  }
+  a {
+    font-size: 10px;
+  }
+  p {
+    font-size: 13px;
+  }
+}
+
+@media all and (min-width: 1200px) {
+  h1 {
+    font-size: 45px;
+  }
+  h2 {
+    font-size: 22px;
+  }
+  h3 {
+    font-size: 25px;
+  }
+  a {
+    font-size: 12px;
+  }
+  p {
+    font-size: 13px;
+  }
+}
+
+@media all and (min-width: 1300px) {
+  h1 {
+    font-size: 50px;
+  }
+  h2 {
+    font-size: 24px;
+  }
+  h3 {
+    font-size: 25px;
+  }
+  a {
+    font-size: 14px;
+  }
+  p {
+    font-size: 13px;
+  }
+}
+
+@media all and (min-width: 1400px) {
+  h1 {
+    font-size: 55px;
+  }
+  h2 {
+    font-size: 26px;
+  }
+  h3 {
+    font-size: 25px;
+  }
+  a {
+    font-size: 16px;
+  }
+  p {
+    font-size: 14px;
+  }
+}
+
+@media all and (min-width: 1500px) {
+  h1 {
+    font-size: 60px;
+  }
+  h2 {
+    font-size: 28px;
+  }
+  h3 {
+    font-size: 25px;
+  }
+  a {
+    font-size: 18px;
+  }
+  p {
+    font-size: 14px;
+  }
+}
+
+@media all and (min-width: 1600px) {
+  h1 {
+    font-size: 65px;
+  }
+  h2 {
+    font-size: 30px;
+  }
+  h3 {
+    font-size: 25px;
+  }
+  a {
+    font-size: 20px;
+  }
+  p {
+    font-size: 14px;
+  }
+}
+
+header .sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+header nav {
+  background: #000;
+  color: #FFFFFF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 100px;
+}
+
+header nav .main_Menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 60px;
+  list-style: none;
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+
+header nav .main_Menu li a {
+  font-family: "Chakra Petch", sans-serif;
+  display: inline-block;
+  padding: 15px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  letter-spacing: 1.38em;
+  -webkit-transition: color, font-size 0.5s ease-out;
+  transition: color, font-size 0.5s ease-out;
+}
+
+header nav .main_Menu li a.active {
+  color: #FFA500;
+  border-bottom: 1px solid #FFA500;
+}
+
+header nav .main_Menu li a:hover {
+  color: #FFA500;
+  font-size: 1rem;
+}
+
+header nav .open_Menu {
+  font-size: 2rem;
+  margin: 20px;
+  display: none;
+  cursor: pointer;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  font-family: 'Chakra Petch', sans-serif;
+}
+
+header nav .main_Menu .close_Menu, header nav .icons i {
+  font-size: 2rem;
+  color: #FFFFFF;
+  display: none;
+  cursor: pointer;
+}
+
+header nav .fa-facebook:hover {
+  color: #3b5998;
+  -webkit-transition: color 0.5s ease-out;
+  transition: color 0.5s ease-out;
+}
+
+header nav .fa-twitter:hover {
+  color: #00acee;
+  -webkit-transition: color 0.5s ease-out;
+  transition: color 0.5s ease-out;
+}
+
+header nav .fa-linkedin-in:hover {
+  color: #0e76a8;
+  -webkit-transition: color 0.5s ease-out;
+  transition: color 0.5s ease-out;
+}
+
+header nav .fa-github:hover {
+  color: #171515;
+  -webkit-transition: color 0.5s ease-out;
+  transition: color 0.5s ease-out;
+}
+
+@media all and (max-width: 1100px) {
+  header nav .main_Menu li a:hover {
+    color: #FFA500;
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 800px) {
+  header nav .main_Menu {
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 10;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background: #000;
+    -webkit-transition: top 1s ease;
+    transition: top 1s ease;
+    display: none;
+    gap: 20px;
+  }
+  header nav .main_Menu li a {
+    letter-spacing: 0.5em;
+  }
+  header nav .main_Menu .close_Menu {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+  header nav .open_Menu {
+    display: block;
+  }
+  header nav .main_Menu li a:hover {
+    background: none;
+    color: #FFA500;
+    font-size: 1.6rem;
+  }
+  header nav .icons i {
+    display: inline-block;
+    padding: 12px;
+    margin-top: 30px;
+  }
+}
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+footer .footer_Container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #000;
+  gap: 40px;
+  height: 300px;
+  width: 100%;
+}
+
+footer .footer_Container .footer_Container_Text {
+  font-family: "Sarabun", sans-serif;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 3.36px;
+  color: #FFA500;
+  margin-bottom: 10px;
+}
+
+footer .footer_Container .fa-arrow-up {
+  font-size: 30px;
+  color: #FFA500;
+}
+
+footer .footer_Container .footer_container_SocialMedia {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 25%;
+}
+
+footer .footer_Container .footer_container_SocialMedia .fa-twitter, footer .footer_Container .footer_container_SocialMedia .fa-facebook-f, footer .footer_Container .footer_container_SocialMedia .fa-linkedin-in, footer .footer_Container .footer_container_SocialMedia .fa-github {
+  font-size: 1.5rem;
+  color: #FFA500;
+  -webkit-transition: color 0.5s ease-out;
+  transition: color 0.5s ease-out;
+}
+
+footer .footer_Container .footer_container_SocialMedia .fa-twitter:hover {
+  color: #00acee;
+  -webkit-transition: color 0.5s ease-out;
+  transition: color 0.5s ease-out;
+}
+
+footer .footer_Container .footer_container_SocialMedia .fa-facebook-f:hover {
+  color: #3b5998;
+  -webkit-transition: color 0.5s ease-out;
+  transition: color 0.5s ease-out;
+}
+
+footer .footer_Container .footer_container_SocialMedia .fa-linkedin-in:hover {
+  color: #0e76a8;
+  -webkit-transition: color 0.5s ease-out;
+  transition: color 0.5s ease-out;
+}
+
+footer .footer_Container .footer_container_SocialMedia .fa-github:hover {
+  color: #171515;
+  -webkit-transition: color 0.5s ease-out;
+  transition: color 0.5s ease-out;
+}
+
+footer .footer_Container .footer_container_SocialMedia .footer_container_SocialMedia {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+  margin-top: 15px;
+}
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+h1 {
+  font-size: 26px;
+}
+
+h2 {
+  font-size: 22px;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+@media all and (min-width: 300px) {
+  h1 {
+    font-size: 15px;
+  }
+  h2 {
+    font-size: 12px;
+  }
+  h3 {
+    font-size: 25px;
+  }
+  p {
+    font-size: 10px;
+  }
+}
+
+@media all and (min-width: 400px) {
+  h1 {
+    font-size: 15px;
+  }
+  h2 {
+    font-size: 12px;
+  }
+  h3 {
+    font-size: 25px;
+  }
+  p {
+    font-size: 10px;
+  }
+}
+
+@media all and (min-width: 500px) {
+  h1 {
+    font-size: 15px;
+  }
+  h2 {
+    font-size: 12px;
+  }
+  h3 {
+    font-size: 25px;
+  }
+  p {
+    font-size: 10px;
+  }
+}
+
+@media all and (min-width: 600px) {
+  h1 {
+    font-size: 15px;
+  }
+  h2 {
+    font-size: 12px;
+  }
+  h3 {
+    font-size: 25px;
+  }
+  p {
+    font-size: 10px;
+  }
+}
+
+@media all and (min-width: 700px) {
+  h1 {
+    font-size: 20px;
+  }
+  h2 {
+    font-size: 12px;
+  }
+  h3 {
+    font-size: 25px;
+  }
+  p {
+    font-size: 12px;
+  }
+}
+
+@media all and (min-width: 800px) {
+  h1 {
+    font-size: 25px;
+  }
+  h2 {
+    font-size: 14px;
+  }
+  h3 {
+    font-size: 25px;
+  }
+  a {
+    font-size: 8px;
+  }
+  p {
+    font-size: 13px;
+  }
+}
+
+@media all and (min-width: 900px) {
+  h1 {
+    font-size: 30px;
+  }
+  h2 {
+    font-size: 16px;
+  }
+  h3 {
+    font-size: 25px;
+  }
+  a {
+    font-size: 10px;
+  }
+  p {
+    font-size: 13px;
+  }
+}
+
+@media all and (min-width: 1000px) {
+  h1 {
+    font-size: 35px;
+  }
+  h2 {
+    font-size: 18px;
+  }
+  h3 {
+    font-size: 25px;
+  }
+  a {
+    font-size: 10px;
+  }
+  p {
+    font-size: 13px;
+  }
+}
+
+@media all and (min-width: 1100px) {
+  h1 {
+    font-size: 40px;
+  }
+  h2 {
+    font-size: 20px;
+  }
+  h3 {
+    font-size: 25px;
+  }
+  a {
+    font-size: 10px;
+  }
+  p {
+    font-size: 13px;
+  }
+}
+
+@media all and (min-width: 1200px) {
+  h1 {
+    font-size: 45px;
+  }
+  h2 {
+    font-size: 22px;
+  }
+  h3 {
+    font-size: 25px;
+  }
+  a {
+    font-size: 12px;
+  }
+  p {
+    font-size: 13px;
+  }
+}
+
+@media all and (min-width: 1300px) {
+  h1 {
+    font-size: 50px;
+  }
+  h2 {
+    font-size: 24px;
+  }
+  h3 {
+    font-size: 25px;
+  }
+  a {
+    font-size: 14px;
+  }
+  p {
+    font-size: 13px;
+  }
+}
+
+@media all and (min-width: 1400px) {
+  h1 {
+    font-size: 55px;
+  }
+  h2 {
+    font-size: 26px;
+  }
+  h3 {
+    font-size: 25px;
+  }
+  a {
+    font-size: 16px;
+  }
+  p {
+    font-size: 14px;
+  }
+}
+
+@media all and (min-width: 1500px) {
+  h1 {
+    font-size: 60px;
+  }
+  h2 {
+    font-size: 28px;
+  }
+  h3 {
+    font-size: 25px;
+  }
+  a {
+    font-size: 18px;
+  }
+  p {
+    font-size: 14px;
+  }
+}
+
+@media all and (min-width: 1600px) {
+  h1 {
+    font-size: 65px;
+  }
+  h2 {
+    font-size: 30px;
+  }
+  h3 {
+    font-size: 25px;
+  }
+  a {
+    font-size: 20px;
+  }
+  p {
+    font-size: 14px;
+  }
+}
+
+.section01_Wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 1000px;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(../images/background_ImgLeft.png);
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/background_ImgLeft.png);
+  background-color: #000;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.section01_Wrapper .section01_Text {
+  font-family: "Sarabun", sans-serif;
+  letter-spacing: 1.215em;
+  color: #FFFFFF;
+  text-transform: uppercase;
+}
+
+.section01_Wrapper .section01_First_Content_Container {
+  padding: 30px;
+}
+
+.section01_Wrapper .section01_First_Content_Container .my_Name {
+  color: #FFA500;
+}
+
+.section01_Wrapper .section01_Second_Content_Container {
+  padding: 30px;
+}
+
+.section01_Wrapper .section01_Third_Content_Container {
+  padding: 30px;
+}
+
+.section01_Wrapper .section01_Third_Content_Container .Frontend_Developer_Text {
+  color: #FFA500;
+}
+
+.section02 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[12];
+      grid-template-columns: repeat(12, 1fr);
+  -ms-grid-rows: (1fr)[12];
+      grid-template-rows: repeat(12, 1fr);
+  background-color: #0c0c0c;
+  width: 100%;
+  height: 700px;
+}
+
+.section02 .section02_Title_Text {
+  margin-top: 30px;
+  color: #FFA500;
+  letter-spacing: 1.215em;
+  text-transform: uppercase;
+  -ms-grid-column: 5;
+  -ms-grid-column-span: 4;
+  grid-column: 5 / span 4;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1 / span 1;
+  place-self: center;
+}
+
+.section02 .section02_First_Project_Container {
+  -ms-grid-column: 4;
+  -ms-grid-column-span: 7;
+  grid-column: 4 / span 7;
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 9;
+  grid-row: 3 / span 9;
+  width: 80%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  overflow: hidden;
+}
+
+.section02 .section02_First_Project_Container > img {
+  width: 50%;
+  height: 50%;
+}
+
+.section04_Wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 600px;
+  gap: 40px;
+  background-color: #000;
+}
+
+.section04_Wrapper .section04_Img_Container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 20%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.section04_Wrapper .section04_Img_Container .section04_Img {
+  width: 70%;
+  height: 60%;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.section04_Wrapper .section04_Text_Container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 60%;
+  margin-left: 30px;
+}
+
+.section04_Wrapper .section04_Text_Container .section04_Text {
+  width: 100%;
+  color: #FFFFFF;
+  font-family: "Sarabun", sans-serif;
+  font-weight: 200;
+  letter-spacing: 0.2em;
+  line-height: 1.8em;
+}
+
+.section04_Wrapper .section04_Text_Container .main_Text {
+  color: #FFA500;
+  padding-bottom: 20px;
+}
+
+.section04_Wrapper .section04_Icons_Container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 10%;
+}
+
+.section04_Wrapper .section04_Icons_Container .fa-twitter, .section04_Wrapper .section04_Icons_Container .fa-facebook-f, .section04_Wrapper .section04_Icons_Container .fa-linkedin-in, .section04_Wrapper .section04_Icons_Container .fa-github {
+  font-size: 35px;
+  color: #FFFFFF;
+  -webkit-transition: color 0.5s ease-out;
+  transition: color 0.5s ease-out;
+}
+
+.section04_Wrapper .section04_Icons_Container .fa-twitter:hover {
+  color: #00acee;
+  -webkit-transition: color 0.5s ease-out;
+  transition: color 0.5s ease-out;
+}
+
+.section04_Wrapper .section04_Icons_Container .fa-facebook-f:hover {
+  color: #3b5998;
+  -webkit-transition: color 0.5s ease-out;
+  transition: color 0.5s ease-out;
+}
+
+.section04_Wrapper .section04_Icons_Container .fa-linkedin-in:hover {
+  color: #0e76a8;
+  -webkit-transition: color 0.5s ease-out;
+  transition: color 0.5s ease-out;
+}
+
+.section04_Wrapper .section04_Icons_Container .fa-github:hover {
+  color: #171515;
+  -webkit-transition: color 0.5s ease-out;
+  transition: color 0.5s ease-out;
+}
+
+.section03_Wrapper {
+  height: 500px;
+  width: 100%;
+  background-color: #0c0c0c;
+}
+
+.section03_Wrapper .section03_Container {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 50px;
+          column-gap: 50px;
+}
+
+.section03_Wrapper .section03_Container .fa-html5, .section03_Wrapper .section03_Container .fa-css3-alt, .section03_Wrapper .section03_Container .fa-js, .section03_Wrapper .section03_Container .fa-sass, .section03_Wrapper .section03_Container .fa-bootstrap, .section03_Wrapper .section03_Container .fa-react {
+  font-size: 50px;
+  color: #FFA500;
+}
+
+.section03_Wrapper .section03_Container .section03_Container_Icon01_Title, .section03_Wrapper .section03_Container .section03_Container_Icon02_Title, .section03_Wrapper .section03_Container .section03_Container_Icon03_Title, .section03_Wrapper .section03_Container .section03_Container_Icon04_Title, .section03_Wrapper .section03_Container .section03_Container_Icon05_Title, .section03_Wrapper .section03_Container .section03_Container_Icon06_Title {
+  color: #FFFFFF;
+  letter-spacing: 0.3em;
+}
+
+.section03_Wrapper .section03_Container .section03_Container_Icon01_Text, .section03_Wrapper .section03_Container .section03_Container_Icon02_Text, .section03_Wrapper .section03_Container .section03_Container_Icon03_Text, .section03_Wrapper .section03_Container .section03_Container_Icon04_Text, .section03_Wrapper .section03_Container .section03_Container_Icon05_Text, .section03_Wrapper .section03_Container .section03_Container_Icon06_Text {
+  color: #FFFFFF;
+}
+
+.section03_Wrapper .section03_Container .section03_Container_Icon01, .section03_Wrapper .section03_Container .section03_Container_Icon02, .section03_Wrapper .section03_Container .section03_Container_Icon03, .section03_Wrapper .section03_Container .section03_Container_Icon04, .section03_Wrapper .section03_Container .section03_Container_Icon05, .section03_Wrapper .section03_Container .section03_Container_Icon06 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 25%;
+  gap: 20px;
+}
+
+.break_Section01, .break_Section02, .break_Section03, .break_Section04 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 100%;
+  height: 500px;
+  background-color: #000;
+}
+
+.break_Section01 .fa-arrow-down, .break_Section02 .fa-arrow-down, .break_Section03 .fa-arrow-down, .break_Section04 .fa-arrow-down {
+  margin-top: 30px;
+  font-size: 30px;
+  color: #FFA500;
+}
+/*# sourceMappingURL=index.css.map */
