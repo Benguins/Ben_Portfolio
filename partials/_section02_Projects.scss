@@ -1,0 +1,124 @@
+// Code for section02 titles projects as well as the relevent media queries for it.
+
+@import "../partials/reset_Code";
+@import "../partials/styling";
+@import "../partials/fonts";
+@import "../partials/colours";
+
+.section02{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    background-color: $blackGrey;
+    width: 100%;
+    height: 700px;
+    .section02_Title_Text{
+        margin-top: 30px;
+        color: $orange;
+        letter-spacing: 1.215em;
+        text-transform: uppercase;
+        font-family: $chakra;
+        grid-column: 5 / span 4;
+        grid-row: 1 / span 1;
+        place-self: center;
+    }
+    .section02_First_Project_Container{
+        grid-column: 3 / span 8;
+        grid-row: 3 / span 9;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        overflow: hidden;
+    }
+    .w-100 {
+        width: 100% !important;
+        height: 480px;
+      }
+}
+
+// Section02 Media Queries
+@media all and (min-width: 0px) and (max-width: 321px){
+    .section02{
+        height: 400px;
+        .section02_Title_Text{
+           font-size: 0.9rem;
+        }
+        .section02_First_Project_Container{
+            grid-column: 3 / span 8;
+            grid-row: 3 / span 7;
+            width: 100%;
+        }
+        .w-100 {
+            width: 100% !important;
+            height: 230px;
+          }
+    }
+}
+
+@media all and (min-width: 322px) and (max-width: 480px){
+    .section02{
+        height: 400px;
+        .section02_Title_Text{
+           font-size: 1rem;
+        }
+        .section02_First_Project_Container{
+            grid-column: 3 / span 8;
+            grid-row: 3 / span 7;
+            width: 100%;
+        }
+        .w-100 {
+            width: 100% !important;
+            height: 230px;
+          }
+    }
+}
+
+@media all and (min-width: 481px) and (max-width: 768px){
+    .section02{
+        height: 500px;
+        .section02_Title_Text{
+            font-size: 1rem;
+         }
+        .section02_First_Project_Container{
+            grid-column: 3 / span 8;
+            grid-row: 3 / span 7;
+            width: 100%;
+        }
+        .w-100 {
+            width: 100% !important;
+            height: 280px;
+          }
+    }
+}
+
+@media all and (min-width: 769px) and (max-width: 1024px){
+    .section02{
+        height: 500px;
+        .section02_Title_Text{
+            font-size: 1rem;
+         }
+        .section02_First_Project_Container{
+            grid-column: 3 / span 8;
+            grid-row: 3 / span 7;
+            width: 100%;
+        }
+        .w-100 {
+            width: 100% !important;
+            height: 280px;
+          }
+    }
+}
+
+@media all and (min-width: 1025px) and (max-width: 1300px){
+    .section02{
+        .section02_First_Project_Container{
+            grid-column: 3 / span 8;
+            grid-row: 3 / span 7;
+            width: 100%;
+        }
+        .w-100 {
+            width: 100% !important;
+            height: 380px;
+          }
+    }
+}

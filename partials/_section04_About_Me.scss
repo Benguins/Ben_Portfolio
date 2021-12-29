@@ -1,0 +1,324 @@
+// Code for section04 about me as well as the relevent media queries.
+
+@import "../partials/reset_Code";
+@import "../partials/styling";
+@import "../partials/fonts";
+@import "../partials/colours";
+
+.section04_Wrapper{
+    width: 100%;
+    height: 600px;
+    gap: 40px;
+    background-color: $blackGrey;
+    .section04_Title{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        .section04_Title_Text{
+            color: $orange;
+            letter-spacing: 1.215em;
+            text-transform: uppercase;
+            font-family: $chakra;
+            margin: 30px 0 30px 0;
+        }
+    }
+    .section04_Container{
+        display: flex;
+        width: 100%;
+        height: 86%;
+        .section04_Img_Container{
+            display: flex;
+            width: 30%;
+            height: 70%;
+            justify-content: center;
+            .section04_Img{
+                width: 60%;
+                height: 60%;
+                align-self: flex-end;
+            }
+        }
+        .section04_Text_Container{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 60%;
+            margin-left: 30px;
+            .section04_Text{
+                width: 100%;
+                color: $white;
+                font-family: $Sarabun;
+                font-weight: 200;
+                letter-spacing: 0.2em;
+                line-height: 1.8em;
+            }
+            .main_Text{
+                color: $orange;
+                padding-bottom: 20px;
+                font-family: $chakra;
+            }
+        }
+        .section04_Icons_Container{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            width: 10%;
+            .fa-twitter, .fa-facebook-f, .fa-linkedin-in, .fa-github{
+                font-size: 35px;
+                color: $white;
+                transition: color 0.5s ease-out;
+            }
+            .fa-twitter:hover{
+                color: $twitter;
+                transition: color 0.5s ease-out;
+            }
+            .fa-facebook-f:hover{
+                color: $facebook;
+                transition: color 0.5s ease-out;
+            }
+            .fa-linkedin-in:hover{
+                color: $linkedin;
+                transition: color 0.5s ease-out;
+            }
+            .fa-github:hover{
+                color: $github;
+                transition: color 0.5s ease-out;
+            }
+        }
+    }
+}
+
+// Section04 Media Queries
+@media all and (min-width: 0px) and (max-width: 321px){
+    .section04_Wrapper{
+        height: 1200px;
+        .section04_Title{
+            .section04_Title_Text{
+                font-size: 0.9rem;
+            }
+        }
+        .section04_Container{
+            flex-direction: column;
+            align-items: center;
+            height: 90%;
+            .section04_Img_Container{
+                width: 100%;
+                height: 80%;
+                .section04_Img{
+                    align-self: center;
+                }
+            }
+            .section04_Text_Container{
+                width: 80%;
+                .section04_Text{
+                    font-size: 0.7rem;
+                }
+                .main_Text{
+                    font-size: 0.9rem;
+                }
+            }
+            .section04_Icons_Container{
+                flex-direction: row;
+                width: 100%;
+                height: 80%;
+                .fa-twitter, .fa-facebook-f, .fa-linkedin-in, .fa-github{
+                    font-size: 35px;
+                    color: $white;
+                    transition: color 0.5s ease-out;
+                }
+                .fa-twitter:hover{
+                    color: $twitter;
+                    transition: color 0.5s ease-out;
+                }
+                .fa-facebook-f:hover{
+                    color: $facebook;
+                    transition: color 0.5s ease-out;
+                }
+                .fa-linkedin-in:hover{
+                    color: $linkedin;
+                    transition: color 0.5s ease-out;
+                }
+                .fa-github:hover{
+                    color: $github;
+                    transition: color 0.5s ease-out;
+                }
+            }
+        }
+    }
+}
+
+@media all and (min-width: 322px) and (max-width: 480px){
+    .section04_Wrapper{
+        height: 1200px;
+        .section04_Title{
+            .section04_Title_Text{
+                font-size: 1rem;
+            }
+        }
+        .section04_Container{
+            flex-direction: column;
+            align-items: center;
+            height: 90%;
+            .section04_Img_Container{
+                width: 100%;
+                height: 80%;
+                .section04_Img{
+                    align-self: center;
+                }
+            }
+            .section04_Text_Container{
+                width: 80%;
+                .section04_Text{
+                    font-size: 0.7rem;
+                }
+                .main_Text{
+                    font-size: 0.9rem;
+                }
+            }
+            .section04_Icons_Container{
+                flex-direction: row;
+                width: 100%;
+                height: 80%;
+                .fa-twitter, .fa-facebook-f, .fa-linkedin-in, .fa-github{
+                    font-size: 35px;
+                    color: $white;
+                    transition: color 0.5s ease-out;
+                }
+                .fa-twitter:hover{
+                    color: $twitter;
+                    transition: color 0.5s ease-out;
+                }
+                .fa-facebook-f:hover{
+                    color: $facebook;
+                    transition: color 0.5s ease-out;
+                }
+                .fa-linkedin-in:hover{
+                    color: $linkedin;
+                    transition: color 0.5s ease-out;
+                }
+                .fa-github:hover{
+                    color: $github;
+                    transition: color 0.5s ease-out;
+                }
+            }
+        }
+    }
+}
+
+@media all and (min-width: 481px) and (max-width: 768px){
+    .section04_Wrapper{
+        height: 1200px;
+        .section04_Title{
+            .section04_Title_Text{
+                font-size: 1.1rem;
+            }
+        }
+        .section04_Container{
+            flex-direction: column;
+            align-items: center;
+            height: 90%;
+            .section04_Img_Container{
+                width: 100%;
+                height: 80%;
+                .section04_Img{
+                    align-self: center;
+                    width: 300px;
+                }
+            }
+            .section04_Text_Container{
+                width: 80%;
+                .section04_Text{
+                    font-size: 0.7rem;
+                }
+                .main_Text{
+                    font-size: 0.9rem;
+                }
+            }
+            .section04_Icons_Container{
+                flex-direction: row;
+                width: 100%;
+                height: 80%;
+                .fa-twitter, .fa-facebook-f, .fa-linkedin-in, .fa-github{
+                    font-size: 35px;
+                    color: $white;
+                    transition: color 0.5s ease-out;
+                }
+                .fa-twitter:hover{
+                    color: $twitter;
+                    transition: color 0.5s ease-out;
+                }
+                .fa-facebook-f:hover{
+                    color: $facebook;
+                    transition: color 0.5s ease-out;
+                }
+                .fa-linkedin-in:hover{
+                    color: $linkedin;
+                    transition: color 0.5s ease-out;
+                }
+                .fa-github:hover{
+                    color: $github;
+                    transition: color 0.5s ease-out;
+                }
+            }
+        }
+    }
+}
+
+@media all and (min-width: 769px) and (max-width: 1024px){
+    .section04_Wrapper{
+        height: 1200px;
+        .section04_Title{
+            .section04_Title_Text{
+                font-size: 1.2rem;
+            }
+        }
+        .section04_Container{
+            flex-direction: column;
+            align-items: center;
+            height: 90%;
+            .section04_Img_Container{
+                width: 100%;
+                height: 80%;
+                .section04_Img{
+                    align-self: center;
+                    width: 300px;
+                }
+            }
+            .section04_Text_Container{
+                width: 80%;
+                .section04_Text{
+                    font-size: 0.8rem;
+                }
+                .main_Text{
+                    font-size: 0.9rem;
+                }
+            }
+            .section04_Icons_Container{
+                flex-direction: row;
+                width: 100%;
+                height: 80%;
+                .fa-twitter, .fa-facebook-f, .fa-linkedin-in, .fa-github{
+                    font-size: 35px;
+                    color: $white;
+                    transition: color 0.5s ease-out;
+                }
+                .fa-twitter:hover{
+                    color: $twitter;
+                    transition: color 0.5s ease-out;
+                }
+                .fa-facebook-f:hover{
+                    color: $facebook;
+                    transition: color 0.5s ease-out;
+                }
+                .fa-linkedin-in:hover{
+                    color: $linkedin;
+                    transition: color 0.5s ease-out;
+                }
+                .fa-github:hover{
+                    color: $github;
+                    transition: color 0.5s ease-out;
+                }
+            }
+        }
+    }
+}

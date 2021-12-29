@@ -1,0 +1,82 @@
+// Code for section01 intro as well as relevent media queries.
+
+@import "../partials/reset_Code";
+@import "../partials/styling";
+@import "../partials/fonts";
+@import "../partials/colours";
+
+
+.section01_Wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+    height: 1000px; 
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../images/background_ImgLeft.png); 
+    background-color: $black;
+    background-repeat: no-repeat;
+    background-size: cover;
+    .section01_Text{
+        font-family: $Sarabun;
+        letter-spacing: 1.215em;
+        color: $white;
+        text-transform: uppercase;
+        align-self: center;
+    }
+    .section01_First_Content_Container{
+        padding: 30px;
+        .my_Name{
+            color: $orange;
+        }
+    }
+    .section01_Second_Content_Container{
+        padding: 30px;
+    }
+    .section01_Third_Content_Container{
+        padding: 30px;
+        .Frontend_Developer_Text{
+            color: $orange;
+        }
+    }
+}
+
+// Section01 Media Queries
+@media all and (min-width: 0px) and (max-width: 350px){
+    .section01_Wrapper{
+        height: 500px; 
+        .section01_Text{
+            letter-spacing: 0.1em;
+        }
+    }
+}
+@media all and (min-width: 351px) and (max-width: 480px){
+    .section01_Wrapper{
+        height: 500px; 
+        .section01_Text{
+            letter-spacing: 0.6em;
+        }
+    }
+}
+
+@media all and (min-width: 481px) and (max-width: 1024px){
+    .section01_Wrapper{
+        height: 500px; 
+        .section01_Text{
+            letter-spacing: 1.1em;
+        }
+    }
+}
+@media all and (min-width: 1025px) and (max-width: 1300px){
+    .section01_Wrapper{
+        height: 700px; 
+    }
+}
+
+
+
+
+
+
+

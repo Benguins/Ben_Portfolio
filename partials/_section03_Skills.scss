@@ -1,0 +1,94 @@
+// Code for section03 skills as well as the relevent media queries.
+
+@import "../partials/reset_Code";
+@import "../partials/styling";
+@import "../partials/fonts";
+@import "../partials/colours";
+
+.section03_Wrapper{
+    height: 800px;
+    width: 100%;
+    background-color: $blackGrey;
+    .section03_Title{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        .section03_Title_Text{
+            color: $orange;
+            letter-spacing: 1.215em;
+            text-transform: uppercase;
+            font-family: $chakra
+        }
+    }
+    .section03_Container{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        column-gap: 50px;
+        .fa-html5, .fa-css3-alt, .fa-js, .fa-sass, .fa-bootstrap, .fa-react{
+            font-size: 50px;
+            color: $orange; 
+        }
+        .section03_Container_Icon01_Title, .section03_Container_Icon02_Title, .section03_Container_Icon03_Title, .section03_Container_Icon04_Title, .section03_Container_Icon05_Title, .section03_Container_Icon06_Title{
+            color: $white;
+            letter-spacing: 0.3em;
+            font-family: $chakra;
+        }
+        .section03_Container_Icon01_Text, .section03_Container_Icon02_Text, .section03_Container_Icon03_Text, .section03_Container_Icon04_Text, .section03_Container_Icon05_Text, .section03_Container_Icon06_Text{
+            color: $white;
+            font-family: $Sarabun;
+            letter-spacing: 0.1em;
+        }
+        .section03_Container_Icon01, .section03_Container_Icon02, .section03_Container_Icon03, .section03_Container_Icon04, .section03_Container_Icon05, .section03_Container_Icon06{
+            display: flex;
+            flex-direction: column;
+            width: 25%;
+            gap: 20px;
+        }
+    }
+}
+
+// Section03 Media Queries
+@media all and (min-width: 0px) and (max-width: 480px){
+    .section03_Wrapper{
+        .section03_Title{
+            .section03_Title_Text{
+                font-size: 1rem;
+            }
+        }
+    }  
+}
+
+@media all and (min-width: 481px) and (max-width: 768px){
+    .section03_Wrapper{
+        .section03_Title{
+            .section03_Title_Text{
+                font-size: 1.1rem;
+            }
+        }
+    }  
+}
+
+@media all and (min-width: 769px) and (max-width: 1024px){
+    .section03_Wrapper{
+        .section03_Title{
+            .section03_Title_Text{
+                font-size: 1.2rem;
+            }
+        }
+    }  
+}
+
+@media all and (min-width: 1025px) and (max-width: 1300px){
+    .section03_Wrapper{
+        height: 800px;
+        .section03_Title{
+            .section03_Title_Text{
+                font-size: 1.3rem;
+            }
+        }
+    }         
+}

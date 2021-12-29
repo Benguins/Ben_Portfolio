@@ -1,4 +1,4 @@
-@import "../partials/navigation_Hamburger";
+@import "../partials/navigation_Bar";
 
 @media(max-width: 800px){
     header{
@@ -43,4 +43,7 @@
             }
         }
     }
+}
+@media all and (max-width: 400px){
+    
 }

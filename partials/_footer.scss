@@ -3,7 +3,6 @@
 @import "fonts";
 
 footer{
-    
     .footer_Container{
         display: flex;
         flex-direction: column;
@@ -28,7 +27,7 @@ footer{
         .footer_container_SocialMedia{
             display:flex;
             justify-content: space-around;
-            width: 25%;
+            width: 35%;
             .fa-twitter, .fa-facebook-f, .fa-linkedin-in, .fa-github {
                 font-size: 1.5rem;
                 color: $orange;
@@ -57,4 +56,57 @@ footer{
             }
         }
     }
+}
+
+// footer Media Queries
+@media all and (min-width: 0px) and (max-width: 480px){
+    footer{
+        .footer_Container{
+            .footer_Container_Text{
+                font-size: 1rem;
+            }
+            .footer_container_SocialMedia{
+                width: 75%;
+            }
+        }
+    } 
+}
+
+@media all and (min-width: 481px) and (max-width: 768px){
+    footer{
+        .footer_Container{
+            .footer_Container_Text{
+                font-size: 1rem;
+            }
+            .footer_container_SocialMedia{
+                width: 65%;
+            }
+        }
+    } 
+}
+
+@media all and (min-width: 769px) and (max-width: 1024px){
+    footer{
+        .footer_Container{
+            .footer_Container_Text{
+                font-size: 1rem;
+            }
+            .footer_container_SocialMedia{
+                width: 55%;
+            }
+        }
+    } 
+}
+
+@media all and (min-width: 1025px) and (max-width: 1300px){
+    footer{
+        .footer_Container{
+            .footer_Container_Text{
+                font-size: 1rem;
+            }
+            .footer_container_SocialMedia{
+                width: 45%;
+            }
+        }
+    } 
 }
